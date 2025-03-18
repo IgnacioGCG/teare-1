@@ -1,39 +1,3 @@
-class Vehiculo:
-    def __init__(self, color, ruedas):
-        self.color = color
-        self.ruedas = ruedas
-
-    def __str__(self):
-        return f"Color {self.color}, {self.ruedas} ruedas"
-
-
-class Coche(Vehiculo):
-    def __init__(self, color, ruedas, velocidad, cilindrada):
-        super().__init__(color, ruedas)
-        self.velocidad = velocidad
-        self.cilindrada = cilindrada
-
-    def __str__(self):
-        return super().__str__() + f", {self.velocidad} km/h, {self.cilindrada} cc"
-
-
-class Moto(Vehiculo):
-    def __init__(self, color, ruedas, tipo):
-        super().__init__(color, ruedas)
-        self.tipo = tipo  # Deportiva, Turismo, etc.
-
-    def __str__(self):
-        return super().__str__() + f", Tipo: {self.tipo}"
-
-
-class Bicicleta(Vehiculo):
-    def __init__(self, color, ruedas, marchas):
-        super().__init__(color, ruedas)
-        self.marchas = marchas
-
-    def __str__(self):
-        return super().__str__() + f", {self.marchas} marchas"
-
 
 # Crear lista de vehículos
 vehiculos = [
